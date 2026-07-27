@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Contact Management System</h1>
+    
+    <div class="form-group">
+        <input type="text" id="username" placeholder="Username" class="input-field">
+        <input type="text" id="contact" placeholder="Contact Number" class="input-field">
+    </div>
+    
+    <div class="button-group">
+        <button onclick="addContact()" class="btn btn-add">Add Contact</button>
+        <button onclick="getContact()" class="btn btn-view">View Contact</button>
+        <button onclick="deleteContact()" class="btn btn-delete">Delete Contact</button>
+        <button onclick="getAll()" class="btn btn-list">View All</button>
+    </div>
+    
+    <pre id="output" class="output"></pre>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

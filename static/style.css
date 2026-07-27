@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-add {
+    background: #667eea;
+    grid-column: 1;
+}
+
+.btn-add:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+.btn-view {
+    background: #48bb78;
+    grid-column: 2;
+}
+
+.btn-view:hover {
+    background: #38a169;
+    transform: translateY(-2px);
+}
+
+.btn-delete {
+    background: #f56565;
+    grid-column: 1;
+}
+
+.btn-delete:hover {
+    background: #e53e3e;
+    transform: translateY(-2px);
+}
+
+.btn-list {
+    background: #ed8936;
+    grid-column: 2;
+}
+
+.btn-list:hover {
+    background: #dd6b20;
+    transform: translateY(-2px);
+}
+
+.output {
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 150px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+    color: #2d3748;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.output:empty::before {
+    content: "Output will appear here...";
+    color: #a0aec0;
+}
