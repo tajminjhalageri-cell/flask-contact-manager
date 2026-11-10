@@ -19,7 +19,7 @@ Flask Contact Management REST API built with SQLite database and CSV migration s
 * **Data Handling:** CSV
 
 ## 📂 Project Structure
-
+```text
 flask-contact-manager/
 │
 ├── static/                   # CSS and frontend static assets
