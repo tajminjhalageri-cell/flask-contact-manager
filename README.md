@@ -44,7 +44,7 @@ flask-contact-manager/
 ## ⚙️ How to Run
 
 Follow these steps to run the project locally on your machine:
-
+```bash
 1. **Clone the repository:**
    git clone [https://github.com/tajminhalageri-cell/flask-contact-manager.git](https://github.com/tajminhalageri-cell/flask-contact-manager.git)
    
@@ -52,6 +52,7 @@ Follow these steps to run the project locally on your machine:
 2. **Install dependencies:**
    pip install -r requirements.txt
 3. **Run the applicaation:**
+```bash
    python app.py
 4. Open your web browser and go to http://127.0.0.1:5000/
    
